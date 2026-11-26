@@ -1,0 +1,2 @@
+# Politique de sécurité
+Version candidate destinée à la formation sur VM isolée. Ne jamais lancer les modules de modification sur une production sans sauvegarde restaurée, console indépendante et validation du changement. Ne jamais publier les rapports, archives, clés privées ou fichiers pgpass. Signaler les vulnérabilités en privé au mainteneur du dépôt; retirer les secrets des preuves. Aucun délai de correction garanti. Les tests hors serveur ne certifient pas la sécurité.

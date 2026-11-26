@@ -1,0 +1,22 @@
+name: Integration PostgreSQL (instance jetable)
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  sql:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        pg: [14, 15, 16, 17, 18]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exécuter dans un conteneur isolé
+        run: |
+          docker run --rm -v "$PWD:/repo:ro" -e DBA_DISPOSABLE_TEST=YES postgres:${{ matrix.pg }} bash -ec '
+            install -d -o postgres -g postgres /tmp/qa-db
+            gosu postgres initdb -D /tmp/qa-db -A trust
+            gosu postgres pg_ctl -D /tmp/qa-db -o "-c listen_addresses= -k /tmp" -w start
+            export PGHOST=/tmp PGUSER=postgres
+            bash /repo/tests/integration_sql.sh
+          '

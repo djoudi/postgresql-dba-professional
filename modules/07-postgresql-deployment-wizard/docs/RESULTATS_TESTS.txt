@@ -1,0 +1,16 @@
+test_apply (test_wizard.Tests.test_apply) ... + true
+ok
+test_cap (test_wizard.Tests.test_cap) ... ok
+test_dry_run (test_wizard.Tests.test_dry_run) ... + apt-get install postgresql-18
+ok
+test_invalid (test_wizard.Tests.test_invalid) ... ok
+test_memory (test_wizard.Tests.test_memory) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+Système: debian 13; RAM hôte: 5947 Mio
+Système: debian 13; RAM hôte: 5947 Mio
+
++ apt-get install postgresql-18 postgresql-common

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.dump
+*.pgpass
+*.pem
+*.key
+*-reports/
+.env

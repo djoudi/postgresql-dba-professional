@@ -1,0 +1,5 @@
+# Adapter au cluster et à la base réellement utilisés.
+PG_VERSION=18
+PG_CLUSTER=main
+PG_DATABASE=ma_base
+BACKUP_DIR=/var/lib/postgresql/guardian-backups

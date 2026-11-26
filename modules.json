@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "postgresql-dba-100-sql-scripts",
+    "path": "modules/01-postgresql-dba-100-sql-scripts",
+    "entry": null
+  },
+  {
+    "id": 2,
+    "name": "postgresql-backup-guardian",
+    "path": "modules/02-postgresql-backup-guardian",
+    "entry": "guardian.sh"
+  },
+  {
+    "id": 3,
+    "name": "postgresql-security-auditor",
+    "path": "modules/03-postgresql-security-auditor",
+    "entry": "auditor.sh"
+  },
+  {
+    "id": 4,
+    "name": "postgresql-performance-doctor",
+    "path": "modules/04-postgresql-performance-doctor",
+    "entry": "doctor.sh"
+  },
+  {
+    "id": 5,
+    "name": "postgresql-dba-emergency-handbook",
+    "path": "modules/05-postgresql-dba-emergency-handbook",
+    "entry": "scripts/diagnostic.sh"
+  },
+  {
+    "id": 6,
+    "name": "postgresql-health-report",
+    "path": "modules/06-postgresql-health-report",
+    "entry": "health.sh"
+  },
+  {
+    "id": 7,
+    "name": "postgresql-deployment-wizard",
+    "path": "modules/07-postgresql-deployment-wizard",
+    "entry": "wizard.sh"
+  },
+  {
+    "id": 8,
+    "name": "ubuntu-server-security-toolkit",
+    "path": "modules/08-ubuntu-server-security-toolkit",
+    "entry": "toolkit.sh"
+  },
+  {
+    "id": 9,
+    "name": "postgresql-lab-generator",
+    "path": "modules/09-postgresql-lab-generator",
+    "entry": "lab.sh"
+  },
+  {
+    "id": 10,
+    "name": "postgresql-migration-assistant",
+    "path": "modules/10-postgresql-migration-assistant",
+    "entry": "migrate.sh"
+  }
+]

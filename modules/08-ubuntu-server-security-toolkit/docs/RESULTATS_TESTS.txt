@@ -1,0 +1,24 @@
+test_audit (test_toolkit.Tests.test_audit) ... ok
+test_dry (test_toolkit.Tests.test_dry) ... ok
+test_profile (test_toolkit.Tests.test_profile) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+OK
+/tmp/tmp1yinmmqm/audit-4cq8rob_
+PubkeyAuthentication yes
+PermitRootLogin no
+PermitEmptyPasswords no
+MaxAuthTries 4
+X11Forwarding no
+
+Conserve le port, les mots de passe et les règles HBA/pare-feu existants.
+Commande: ['ufw', 'allow']
+PubkeyAuthentication yes
+PermitRootLogin no
+PermitEmptyPasswords no
+MaxAuthTries 4
+X11Forwarding no
+
+Conserve le port, les mots de passe et les règles HBA/pare-feu existants.

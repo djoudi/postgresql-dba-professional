@@ -1,0 +1,8 @@
+[Unit]
+Description=Rapport de santé PostgreSQL
+[Service]
+Type=oneshot
+User=postgres
+UMask=0077
+ExecStart=/opt/pg-health/health.sh --port 5432 --database postgres --output /var/lib/postgresql/health-reports
+NoNewPrivileges=true

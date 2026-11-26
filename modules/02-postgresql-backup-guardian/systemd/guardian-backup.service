@@ -1,0 +1,14 @@
+[Unit]
+Description=PostgreSQL Backup Guardian - sauvegarde logique
+[Service]
+Type=oneshot
+User=postgres
+Group=postgres
+UMask=0077
+EnvironmentFile=/etc/pg-backup-guardian.conf
+ExecStart=/usr/local/sbin/pg-backup-guardian backup ${PG_VERSION} ${PG_CLUSTER} ${PG_DATABASE} ${BACKUP_DIR}
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/postgresql/guardian-backups

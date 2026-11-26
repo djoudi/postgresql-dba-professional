@@ -1,0 +1,5 @@
+*.dump
+*.log
+.env
+SHA256SUMS
+globals.sql

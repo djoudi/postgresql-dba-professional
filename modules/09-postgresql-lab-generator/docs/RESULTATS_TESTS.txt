@@ -1,0 +1,11 @@
+test_dry (test_lab.TestLab.test_dry) ... ok
+test_invalid_port (test_lab.TestLab.test_invalid_port) ... ok
+test_names (test_lab.TestLab.test_names) ... ok
+test_volume (test_lab.TestLab.test_volume) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 3.307s
+
+OK
+Action=create cible=/var/run/postgresql:5432/lab_dgpc lignes=10000000
+SIMULATION : aucune modification. Ajouter --apply.

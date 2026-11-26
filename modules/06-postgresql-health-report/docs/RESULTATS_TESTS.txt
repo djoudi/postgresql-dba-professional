@@ -1,0 +1,10 @@
+test_collect_failure (test_health.TestHealth.test_collect_failure) ... ok
+test_export (test_health.TestHealth.test_export) ... ok
+test_html (test_health.TestHealth.test_html) ... ok
+test_unsafe_dir (test_health.TestHealth.test_unsafe_dir) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.006s
+
+OK
+1.0.0
